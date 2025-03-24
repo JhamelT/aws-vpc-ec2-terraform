@@ -8,12 +8,12 @@ module "vpc" {
 module "sg" {
  source  = "./modules/security_group"
  vpc_id  = module.vpc.vpc_id
- my_ip   = "YOUR_IP/32"
+ my_ip   = "98.81.156.246" # update ip address if necessary
  project = "vpc-ec2-demo"
 }
 module "ec2" {
  source         = "./modules/ec2"
- ami_id         = "AMI_ID_HERE"  # Use latest Amazon Linux 2 AMI
+ ami_id         = "ami-01f5a0b78d6089704"  # Use latest Amazon Linux 2 AMI - update ami if necessary
  instance_type  = "t3.micro"
  subnet_id      = module.vpc.public_subnet_id
  sg_id          = module.sg.sg_id
