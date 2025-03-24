@@ -30,12 +30,13 @@ resource "aws_route_table" "public_rt" {
     }
 }
 
-variable "az" {
-  description = "Availability zone for subnet"
-  type        = string
+resource "aws_route" "default_route" {
+ route_table_id         = aws_route_table.public_rt.id
+ destination_cidr_block = "0.0.0.0/0"
+ gateway_id             = aws_internet_gateway.igw.id
 }
 
-variable "project" {
-  description = "Project name for tagging"
-  type        = string
+resource "aws_route_table_association" "public_assoc" {
+ subnet_id      = aws_subnet.public.id
+ route_table_id = aws_route_table.public_rt.id
 }
