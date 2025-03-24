@@ -22,3 +22,20 @@ resource "aws_subnet" "public" {
       name = "${var.project}-public-subnet"
       }
 }
+
+resource "aws_route_table" "public_rt" {
+    vpc_id = aws.vpc.main.id
+    tags = {
+      name = "{var.project}-public-rt"
+    }
+}
+
+variable "az" {
+  description = "Availability zone for subnet"
+  type        = string
+}
+
+variable "project" {
+  description = "Project name for tagging"
+  type        = string
+}
