@@ -1,4 +1,4 @@
-*//
+#*//
 #terraform {
   #backend"s3"
     #bucket         = "jha-terraform-stat"
@@ -7,4 +7,4 @@
     #dynamodb_table = "terraform-locks"
   }
 }
- *//
+ #*//
