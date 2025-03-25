@@ -46,7 +46,7 @@ resource "aws_route_table_association" "public_assoc" {
 
 # Calling the module in root file
 module "vpc1" {
- source             = "./modules/vpc"
+ source             = "./modules/vpc1"
  vpc_cidr           = "10.0.0.0/16"
  public_subnet_cidr = "10.0.1.0/24"
  az                 = "us-east-1a"
