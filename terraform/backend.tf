@@ -1,3 +1,4 @@
+//
 terraform {
   backend"s3"
     bucket         = "jha-terraform-stat"
@@ -6,4 +7,4 @@ terraform {
     dynamodb_table = "terraform-locks"
   }
 }
-
+ //
