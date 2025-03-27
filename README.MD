@@ -8,9 +8,14 @@ This project demonstrates the deployment of a custom VPC with public subnetting,
 
 
 Terraform Modules: Reusable, modular code for VPC, Security Groups, and EC2 instance deployment.
-• Remote State Management: Terraform backend configured with S3 (state) and DynamoDB (locking) for collaboration and safety.
+• Remote State Management:
+Terraform backend configured with S3 (state) and DynamoDB (locking) for collaboration and safety.
+
 • Networking Fundamentals: VPC, public subnet, Internet Gateway, route tables, and security groups implemented.
+
 • Automation: EC2 provisioning includes user data script to automatically install and serve Nginx.
+
 • Security Best Practices:
-• SSH access restricted to my IP only.
+  SSH access restricted to my IP only.
+
 • HTTP open to the internet (for web server visibility).
