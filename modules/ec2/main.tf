@@ -7,6 +7,6 @@ resource "aws_instance" "web" {
  user_data = file("${path.module}/user_data.sh")
  tags = {
    Name = "${var.project}-ec2"
-   owner = "Jha"
+   owner = "J"
  }
 }
