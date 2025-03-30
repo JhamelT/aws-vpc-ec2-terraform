@@ -5,6 +5,7 @@ output "vpc_id"  {
 }
 
 output "public_subnet_id" {
+  description = " The id of the public subnet"
   value = aws_subnet.public.id
 }
 
