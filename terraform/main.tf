@@ -18,9 +18,6 @@ module "ec2" {
  subnet_id      = module.vpc1.public_subnet_id
  sg_id          = module.security_group1.sg_id
  project        = "vpc-ec2-demo"
-variable "ami_id" {
- description = "AMI ID for EC2 instance"
- type        = string
 }
 variable "instance_type" {
  description = "EC2 instance type"
