@@ -45,3 +45,9 @@ variable "project" {
   type        = string
   default     = "vpc-ec2-demo"  # Add default value
 }
+
+
+provider "aws" {
+  region = "us-east-1"  # Use the region that matches where your resources should be deployed
+  # No need to specify access_key and secret_key here since they're set as workspace variables
+}
