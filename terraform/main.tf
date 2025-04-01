@@ -9,7 +9,7 @@ module "vpc1" {
 module "security_group1" {
   source  = "../modules/security_group1"
   vpc_id  = module.vpc1.vpc_id
-  my_ip   = "98.84.152.240/32"  # Change this to include /32
+  my_ip   = "98.84.152.240"
   project = "vpc-ec2-demo"
 }
 
