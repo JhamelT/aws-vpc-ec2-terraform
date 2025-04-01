@@ -1,5 +1,7 @@
 AWS VPC + EC2 Deployment via Terraform
-OVERVIEW
+
+* OVERVIEW
+
 This project demonstrates the deployment of a custom VPC with public subnetting, an EC2 instance running Nginx, and proper networking configuration using Terraform Infrastructure as Code (IaC). The infrastructure is managed with remote state via HashiCorp Cloud Platform (HCP) Terraform for safety and scalability.
 Key Features
 
