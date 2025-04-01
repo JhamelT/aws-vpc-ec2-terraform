@@ -9,8 +9,8 @@ module "vpc1" {
 module "security_group1" {
   source  = "../modules/security_group1"
   vpc_id  = module.vpc1.vpc_id
-  my_ip   = "98.84.152.240"
-  project = var.project  # Use the variable
+  my_ip   = "98.84.152.240/32"  # Change this to include /32
+  project = "vpc-ec2-demo"
 }
 
 module "ec2" {
