@@ -3,12 +3,12 @@ resource "aws_security_group" "web_sg" {
  description = "Allow SSH and HTTP traffic"
  vpc_id      = var.vpc_id
  ingress {
-   description = "SSH from my IP"
-   from_port   = 22
-   to_port     = 22
-   protocol    = "tcp"
-   cidr_blocks = [var.my_ip]
- }
+    description = "SSH from my IP"
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["${var.my_ip}/32"]  # Append /32 here if not already in CIDR format
+  }
  ingress {
    description = "HTTP from all"
    from_port   = 80
