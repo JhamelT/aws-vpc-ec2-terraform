@@ -19,7 +19,6 @@ Key Features
 
 
 Technical Highlights
-
 - Infrastructure defined entirely as code, enabling consistent deployments and version control
 Separation of concerns through modular design, enhancing maintainability and reusability
 Automated resource provisioning, eliminating manual configuration errors
