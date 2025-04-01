@@ -1,4 +1,4 @@
-AWS VPC + EC2 Deployment via Terraform
+**AWS VPC + EC2 Deployment via Terraform
 
 OVERVIEW
 
