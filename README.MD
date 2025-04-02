@@ -32,12 +32,12 @@ Key Features
 
 Technical Highlights
 - Infrastructure as Code (IaC):
-      * Ensures consistent deployments and version control by defining infrastructure entirely as code.
+       Ensures consistent deployments and version control by defining infrastructure entirely as code.
 - Modular Design:
-      * Promotes separation of concerns, improving maintainability and reusability.
+       Promotes separation of concerns, improving maintainability and reusability.
 
 - Automated Provisioning:
-      * Eliminates manual configuration errors through automated resource deployment.
+       Eliminates manual configuration errors through automated resource deployment.
 
 - Scalability:
-      * Achieved via parameterized modules and IaC best practices.
+       Achieved via parameterized modules and IaC best practices.
