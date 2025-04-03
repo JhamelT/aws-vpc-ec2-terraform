@@ -49,4 +49,4 @@ terraform apply
 ## Diagram
 *Add a visual diagram of your architecture here (e.g., using draw.io, Lucidchart, or an embedded image)*
 ## Author
-Jhaâ€™Mel â€” AWS Certified, aspiring Cloud Engineer
+Jha'Mel AWS Solutions Architect Certified, aspiring Cloud Engineer
