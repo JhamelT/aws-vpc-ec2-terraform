@@ -18,3 +18,8 @@ variable "project" {
  description = "Project tag"
  type        = string
 }
+
+variable "project" {
+ type        = string
+ description = "Project name for tagging"
+}
